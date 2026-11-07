@@ -1,0 +1,152 @@
+
+/* FULL-SCREEN HOMEPAGE */
+
+#home.hero-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 110px 8% 80px;
+  margin: 0;
+
+  background-color: #064e2a;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Main text container */
+
+#home.hero-section .hero-inner {
+  width: 100%;
+  max-width: 630px;
+  margin: 0;
+}
+
+/* Small location label */
+
+.hero-eyebrow {
+  display: block;
+  margin-bottom: 24px;
+
+  color: #e9c15b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+/* Main title */
+
+#home.hero-section .hero-title {
+  color: #ffffff;
+
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+
+  margin: 0 0 28px;
+}
+
+/* Description */
+
+#home.hero-section .hero-description {
+  max-width: 550px;
+
+  color: #ffffff;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 1.7;
+
+  margin: 0 0 36px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.hero-primary {
+  display: inline-block;
+
+  padding: 16px 30px;
+  background: #d6a321;
+  color: #193c32;
+
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: background 0.3s ease;
+}
+
+.hero-primary:hover {
+  background: #e9c15b;
+}
+
+.hero-secondary {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-secondary:hover {
+  color: #e9c15b;
+}
+
+/* Scroll indicator */
+
+.hero-scroll {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  #home.hero-section {
+    justify-content: center;
+    padding: 130px 6% 85px;
+    background-position: 35% center;
+  }
+
+  #home.hero-section .hero-inner {
+    text-align: center;
+  }
+
+  #home.hero-section .hero-title {
+    font-size: clamp(3rem, 12vw, 4.5rem);
+  }
+
+  #home.hero-section .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: 22px;
+  }
+}
