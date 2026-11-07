@@ -1,0 +1,200 @@
+
+/* SERVICES SECTION */
+
+.services {
+  background: #f9f8f4;
+  color: #064e2a;
+  text-align: left;
+  padding-top: 115px;
+  padding-bottom: 70px;
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.services-heading {
+  max-width: 740px;
+  margin-bottom: 40px;
+}
+
+.services-label {
+  color: #a47a12;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.services-heading h2 {
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.services-heading p {
+  color: #526657;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Two-column layout */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.services-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.service-number {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #a47a12;
+}
+
+.service-card h3 {
+  font-size: 1.7rem;
+  margin: 18px 0;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.service-intro {
+  color: #526657;
+}
+
+/* Business card */
+
+.business-card {
+  background: #e9ede5;
+}
+
+.business-list {
+  margin-top: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.business-item {
+  border-top: 1px solid #cdd8cd;
+  padding-top: 13px;
+}
+
+.business-item h4 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+  color: #064e2a;
+}
+
+.business-item p {
+  margin: 0;
+  color: #526657;
+  font-size: 0.88rem;
+}
+
+/* Education card */
+
+.education-card {
+  background: #f1ead6;
+}
+
+.education-card p {
+  color: #526657;
+}
+
+.service-card ul {
+  margin: 20px 0 0;
+  padding-left: 20px;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.education-card li::marker {
+  color: #a47a12;
+}
+
+/* Community card */
+
+.cause-card {
+  background: #064e2a;
+  color: #f9f8f4;
+  flex: 1;
+}
+
+.cause-card .service-number {
+  color: #e2b84a;
+}
+
+.cause-card p {
+  color: #e0e9e1;
+}
+
+.cause-card li::marker {
+  color: #e2b84a;
+}
+
+.cause-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  color: #e2b84a;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid #e2b84a;
+  padding-bottom: 7px;
+}
+
+.cause-link:hover {
+  color: white;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding-top: 145px;
+  }
+
+  .service-card {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-heading h2 {
+    font-size: 2.4rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+}
