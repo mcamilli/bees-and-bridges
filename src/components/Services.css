@@ -1,200 +1,110 @@
-
-/* SERVICES SECTION */
-
-.services {
+/* The business section is one full-width, viewport-height panel. */
+#services.business-section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 120px 6% 65px;
   background: #f9f8f4;
   color: #064e2a;
   text-align: left;
-  padding-top: 115px;
-  padding-bottom: 70px;
 }
 
-.services-container {
+.business-shell {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
-}
-
-/* Heading */
-
-.services-heading {
-  max-width: 740px;
-  margin-bottom: 40px;
-}
-
-.services-label {
-  color: #a47a12;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
-.services-heading h2 {
-  font-size: clamp(2.5rem, 4vw, 4.2rem);
-  line-height: 1.1;
-  margin: 20px 0;
-}
-
-.services-heading p {
-  color: #526657;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* Two-column layout */
-
-.services-grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 20px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
 }
 
-.services-right {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.service-card {
-  padding: 32px;
-  border-radius: 10px;
-}
-
-.service-number {
+.business-kicker {
   font-size: 0.75rem;
-  letter-spacing: 2px;
   font-weight: 700;
+  letter-spacing: 2.5px;
   color: #a47a12;
 }
 
-.service-card h3 {
-  font-size: 1.7rem;
-  margin: 18px 0;
+.business-copy h2 {
+  margin: 15px 0;
+  font-size: clamp(2.5rem, 4.3vw, 4.5rem);
+  line-height: 1.07;
 }
 
-.service-card p {
-  font-size: 0.95rem;
+.business-lead {
+  max-width: 620px;
+  margin: 0 0 26px;
+  color: #526657;
+  font-size: 1rem;
   line-height: 1.65;
 }
 
-.service-intro {
-  color: #526657;
-}
-
-/* Business card */
-
-.business-card {
-  background: #e9ede5;
-}
-
-.business-list {
-  margin-top: 28px;
+.business-feature-grid {
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 17px;
 }
 
-.business-item {
-  border-top: 1px solid #cdd8cd;
-  padding-top: 13px;
+.business-feature {
+  border-top: 2px solid #d6a321;
+  padding-top: 12px;
 }
 
-.business-item h4 {
-  font-size: 1rem;
+.business-feature h3 {
   margin: 0 0 5px;
   color: #064e2a;
+  font-size: 1rem;
 }
 
-.business-item p {
+.business-feature p {
   margin: 0;
-  color: #526657;
-  font-size: 0.88rem;
-}
-
-/* Education card */
-
-.education-card {
-  background: #f1ead6;
-}
-
-.education-card p {
-  color: #526657;
-}
-
-.service-card ul {
-  margin: 20px 0 0;
-  padding-left: 20px;
-}
-
-.service-card li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
+  font-size: 0.87rem;
   line-height: 1.5;
+  color: #526657;
 }
 
-.education-card li::marker {
-  color: #a47a12;
-}
-
-/* Community card */
-
-.cause-card {
-  background: #064e2a;
-  color: #f9f8f4;
-  flex: 1;
-}
-
-.cause-card .service-number {
-  color: #e2b84a;
-}
-
-.cause-card p {
-  color: #e0e9e1;
-}
-
-.cause-card li::marker {
-  color: #e2b84a;
-}
-
-.cause-link {
+.business-cta {
   display: inline-flex;
+  gap: 10px;
   align-items: center;
-  gap: 12px;
-  margin-top: 24px;
-  color: #e2b84a;
-  text-decoration: none;
+  margin-top: 26px;
+  padding: 13px 22px;
+  border-radius: 6px;
+  background: #d6a321;
+  color: #173c30;
   font-weight: 700;
-  border-bottom: 1px solid #e2b84a;
-  padding-bottom: 7px;
+  text-decoration: none;
 }
 
-.cause-link:hover {
-  color: white;
+.business-cta:hover { background: #edbf4c; }
+
+.business-photo { margin: 0; min-width: 0; }
+
+.business-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(340px, 38vw, 520px);
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(7, 52, 29, 0.10);
 }
 
-/* Responsive design */
-
-@media (max-width: 900px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .services {
-    padding-top: 145px;
-  }
-
-  .service-card {
-    padding: 26px;
-  }
+.business-photo figcaption {
+  margin-top: 12px;
+  color: #526657;
+  font-size: 0.85rem;
+  text-align: center;
 }
 
-@media (max-width: 500px) {
-  .services-heading h2 {
-    font-size: 2.4rem;
-  }
+@media (max-width: 950px) {
+  #services.business-section { padding: 130px 6% 65px; }
+  .business-shell { grid-template-columns: 1fr; }
+  .business-photo img { height: auto; max-height: 460px; }
+}
 
-  .service-card h3 {
-    font-size: 1.5rem;
-  }
+@media (max-width: 560px) {
+  .business-feature-grid { grid-template-columns: 1fr; }
+  .business-copy h2 { font-size: 2.55rem; }
 }

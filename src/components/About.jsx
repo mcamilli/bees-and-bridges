@@ -8,7 +8,7 @@ function About() {
 
         <div className="about-intro">
           <span className="about-label">
-            01 / ABOUT US
+            ABOUT US
           </span>
 
           <h2>Bridging people and nature.</h2>
