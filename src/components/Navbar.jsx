@@ -1,9 +1,17 @@
 
+
+import icon from "../assets/bees-and-bridges-icon.png";
+
 function Navbar() {
   return (
     <header className="navbar">
       <a href="#home" className="logo">
-        Bees & Bridges
+        <img
+          src={icon}
+          alt=""
+          className="navbar-logo"
+        />
+        <span>Bees & Bridges</span>
       </a>
 
       <nav>
@@ -17,3 +25,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
