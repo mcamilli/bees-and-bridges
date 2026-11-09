@@ -5,7 +5,7 @@ const businessServices = [
   { title: "Hands-on Beekeeping", description: "Guided hive experiences that connect your team with honey bees." },
   { title: "Environmental Data", description: "Hive observations, environmental indicators, and accessible reports." },
   { title: "Branded Honey", description: "Honey with a custom label that tells your organization's story." },
-  { title: "Honey & Hive Products", description: "Honey harvesting, beeswax candle making, and interactive workshops." },
+  { title: "Candle making", description: "Beeswax candle making, and interactive workshops." },
   { title: "Pollinator Habitats", description: "Create flowering spaces that support bees and other pollinators." },
   { title: "Biodiversity Monitoring", description: "Wild-pollinator surveys and plant-resource insights from pollen DNA." },
 ];
